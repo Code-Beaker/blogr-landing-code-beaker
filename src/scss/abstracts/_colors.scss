@@ -1,0 +1,29 @@
+// === === === ===
+// === COLORS  ===
+// === === === ===
+$colors: (
+  primary__light-red-text: hsl(356, 100%, 66%),
+  primary__very-light-red-hover-bg: hsl(355, 100%, 74%),
+  primary__very-dark-blue-heading: hsl(208, 49%, 24%),
+  neutral__white-text: hsl(0, 0%, 100%),
+  neutral__grayish-blue-footer-text: hsl(240, 2%, 79%),
+  neutral__very-dark-grayish-blue-body: hsl(207, 13%, 34%),
+  neutral__very-dark-blue-footer-bg: hsl(240, 10%, 16%),
+);
+
+@function color($color) {
+  @return map-get($colors, $color);
+}
+
+// === === === === ===
+// ===  GRADIENTS  ===
+// === === === === ===
+$gradients: (
+  intro__mobile-nav:
+    linear-gradient(45deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%)),
+  body__background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%)),
+);
+
+@function gradient($gradient) {
+  @return map-get($gradients, $gradient);
+}

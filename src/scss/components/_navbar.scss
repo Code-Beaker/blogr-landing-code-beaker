@@ -1,0 +1,7 @@
+@mixin navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.25rem calc(2 * 2.25rem);
+  z-index: 9;
+}

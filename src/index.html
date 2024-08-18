@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogr Landing Page | Code-Beaker</title>
+    <link rel="stylesheet" href="scss/style.scss" />
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
+  </head>
+  <body>
+    <header class="header">
+      <picture>
+        <source
+          srcset="./assets/images/bg-pattern-intro-desktop.svg"
+          media="(min-width: 50rem)"
+        />
+        <img
+          class="header__bg"
+          src="./assets/images/bg-pattern-intro-mobile.svg"
+          alt="illustration acting as the background for header"
+        />
+      </picture>
+      <nav class="navbar">
+        <a href="index.html" class="navbar__logo">
+          <img
+            src="assets/images/logo.svg"
+            alt="Go to the homepage of Blogr"
+            class="navbar__logo--img"
+          />
+        </a>
+        <ul class="navbar__links">
+          <li class="navbar__links--item">
+            <a href="#" class="navbar__links--link"
+              >Product
+              <span class="navbar__links--link__icon"
+                ><img
+                  src="assets/images/icon-arrow-light.svg"
+                  alt="expand dropdown list" /></span
+            ></a>
+          </li>
+          <li class="navbar__links--item">
+            <a href="#" class="navbar__links--link"
+              >Company
+              <span class="navbar__links--link__icon"
+                ><img
+                  src="assets/images/icon-arrow-light.svg"
+                  alt="expand dropdown list" /></span
+            ></a>
+          </li>
+          <li class="navbar__links--item">
+            <a href="#" class="navbar__links--link"
+              >Connect
+              <span class="navbar__links--link__icon"
+                ><img
+                  src="assets/images/icon-arrow-light.svg"
+                  alt="expand dropdown list" /></span
+            ></a>
+          </li>
+        </ul>
+        <ul class="navbar__buttons">
+          <li class="navbar__buttons--item">
+            <a href="#" class="navbar__buttons--button button-text">Login</a>
+          </li>
+          <li class="navbar__buttons--item">
+            <a href="#" class="navbar__buttons--button button-primary"
+              >Sign Up</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="header__text-content">
+        <h1 class="header__text-content--heading">
+          A modern publishing platform
+        </h1>
+        <p class="header__text-content--text">
+          Grow your audience and build your online brand
+        </p>
+        <div class="header__buttons">
+          <a href="#" class="header__buttons--button button-text"
+            >Start for free</a
+          >
+          <a href="#" class="header__buttons--button button-primary"
+            >Learn more</a
+          >
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

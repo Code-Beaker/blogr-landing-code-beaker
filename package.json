@@ -1,0 +1,17 @@
+{
+  "name": "blogr-landing-page",
+  "version": "1.0.0",
+  "description": "A challenge from Frontend Mentor",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "Code-Beaker",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.12.0",
+    "parcel": "^2.12.0"
+  }
+}
