@@ -21,7 +21,8 @@ $colors: (
 $gradients: (
   intro__mobile-nav:
     linear-gradient(45deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%)),
-  body__background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%)),
+  body__background:
+    linear-gradient(45deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%)),
 );
 
 @function gradient($gradient) {
