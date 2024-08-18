@@ -94,6 +94,7 @@ h4 {
 
   &__links--link__icon {
     display: block;
+    transition: 100ms ease-in-out;
 
     & img {
       width: 1.05rem;
@@ -149,5 +150,63 @@ h4 {
 
   &:focus-visible {
     outline: 0.125rem dotted a.color(neutral__white-text);
+  }
+}
+
+.drop-expanded {
+  rotate: 180deg;
+}
+
+// ===                         ===
+// === DESIGNED FOR THE FUTURE ===
+// ===                         ===
+.designed {
+  padding: 4rem;
+  overflow: hidden;
+
+  &--heading {
+    text-align: center;
+    font-size: var(--step-3);
+    color: a.color(primary__very-dark-blue-heading);
+    margin-bottom: 2rem;
+  }
+
+  &--cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &--cols__content--cols {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &--cols__content--item__heading {
+    font-size: var(--step-1);
+    margin-bottom: 1rem;
+    color: a.color(primary__very-dark-blue-heading);
+  }
+
+  &--cols__content--item__text {
+    font-size: var(--step--1);
+    font-family: a.font(font__heading);
+    color: hsla(from a.color(primary__very-dark-blue-heading) h s l / 0.75);
+  }
+
+  &--cols__imgWrapper {
+    position: relative;
+    // background: red;
+    height: 40rem;
+    width: 35rem;
+  }
+
+  &--cols__imgWrapper--img {
+    position: absolute;
+    max-width: 50rem;
+    top: -5rem;
+    right: -20rem;
   }
 }
