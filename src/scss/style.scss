@@ -256,3 +256,47 @@ h4 {
     color: a.color(neutral__white-text);
   }
 }
+
+// ===          ===
+// === FEATURES ===
+// ===          ===
+.features {
+  padding: 6rem 4rem;
+
+  &__cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  &__cols--imgWrapper {
+    height: 25rem;
+    width: 25rem;
+    position: relative;
+  }
+
+  &__cols--imgWrapper__img {
+    position: absolute;
+    max-width: 55rem;
+    left: -20rem;
+    top: -2.5rem;
+  }
+
+  &__cols--content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: a.color(primary__very-dark-blue-heading);
+    font-family: a.font(font__heading);
+    margin-top: 12rem;
+  }
+
+  &__cols--content__heading {
+    font-size: var(--step-1);
+    margin-bottom: 1rem;
+  }
+
+  &__cols--content__text {
+    font-size: var(--step--1);
+  }
+}
