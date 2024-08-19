@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
   </head>
   <body>
+    <a
+      aria-hidden="false"
+      aria-label="Go to main content"
+      href="#main"
+      tabindex="0"
+      class="go-to-main"
+      >Skip to main content</a
+    >
     <header class="header">
       <picture>
         <source
@@ -78,7 +86,7 @@
           </li>
         </ul>
       </nav>
-      <div class="header__text-content">
+      <section id="main" tabindex="-1" class="header__text-content">
         <h1 class="header__text-content--heading">
           A modern publishing platform
         </h1>
@@ -93,7 +101,7 @@
             >Learn more</a
           >
         </div>
-      </div>
+      </section>
     </header>
     <main>
       <section class="section designed">
