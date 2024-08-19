@@ -1,6 +1,28 @@
 @use "./abstracts/" as a;
 @use "./components/" as c;
 
+// Go to main content link
+.go-to-main {
+  position: absolute;
+  z-index: 9;
+  padding: 1rem 2rem;
+  background-color: a.color(neutral__white-text);
+  color: a.color(primary__very-dark-blue-heading);
+  text-decoration: none;
+  font-size: var(--step-0);
+  border-radius: 0 0 1.5rem 0;
+  top: 0;
+  left: 0;
+  transform: translateY(-10rem);
+  transition: 0.5s ease-in-out;
+}
+
+.go-to-main:focus,
+.go-to-main:focus-visible {
+  transform: translateY(0);
+  outline: 0.25rem solid black;
+}
+
 body {
   font-family: a.font(font__body);
 }
