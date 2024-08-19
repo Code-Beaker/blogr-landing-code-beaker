@@ -1,0 +1,16 @@
+@mixin link($color, $weight, $size) {
+  display: block;
+  text-decoration: none;
+  color: $color;
+  outline-offset: 0.25rem;
+  font-weight: $weight;
+  font-size: $size;
+
+  &:hover {
+    text-decoration: underline 0.125rem;
+  }
+
+  &:focus-visible {
+    outline: 0.125rem dotted $color;
+  }
+}

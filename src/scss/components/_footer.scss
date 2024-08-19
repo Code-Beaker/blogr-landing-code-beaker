@@ -1,0 +1,5 @@
+@mixin footer($bg) {
+  padding: 3rem;
+  background-color: $bg;
+  margin-top: 15rem;
+}
