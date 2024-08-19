@@ -20,6 +20,7 @@
 .go-to-main:focus,
 .go-to-main:focus-visible {
   transform: translateY(0);
+  font-weight: a.weight(bold);
   outline: 0.25rem solid black;
 }
 
@@ -95,6 +96,32 @@ h4 {
     align-items: center;
   }
 
+  &__links--item {
+    position: relative;
+    // border: 0.125rem solid white; FOR PREVIEW
+  }
+
+  &__dropdown {
+    padding: 1rem;
+    list-style: none;
+    position: absolute;
+    background-color: a.color(neutral__white-text);
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    gap: 1rem;
+    display: none;
+    border-radius: 0.25rem;
+  }
+
+  &__dropdown--link {
+    @include c.link(
+      a.color(neutral__very-dark-grayish-blue-body),
+      a.weight(regular),
+      var(--step--1)
+    );
+  }
+
   &__links--link {
     display: flex;
     align-items: baseline;
@@ -109,6 +136,10 @@ h4 {
       text-decoration: underline 0.125rem;
     }
 
+    &:focus {
+      text-decoration: underline 0.125rem;
+    }
+
     &:focus-visible {
       outline: 0.125rem dotted white;
     }
@@ -116,7 +147,7 @@ h4 {
 
   &__links--link__icon {
     display: block;
-    // transition: 100ms ease-in-out;
+    transition: 100ms ease-in-out;
 
     & img {
       width: 1.05rem;
@@ -130,6 +161,11 @@ h4 {
     gap: 1rem;
   }
 }
+
+.dropdown-show {
+  display: flex;
+}
+
 // ===         ===
 // === BUTTONS ===
 // ===         ===

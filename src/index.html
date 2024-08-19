@@ -8,12 +8,7 @@
     <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
   </head>
   <body>
-    <a
-      aria-hidden="false"
-      aria-label="Go to main content"
-      href="#main"
-      tabindex="0"
-      class="go-to-main"
+    <a aria-hidden="false" href="#main" class="go-to-main"
       >Skip to main content</a
     >
     <header class="header">
@@ -29,10 +24,10 @@
         />
       </picture>
       <nav class="navbar">
-        <a href="index.html" class="navbar__logo">
+        <a href="index.html" aria-label="Go to homepage" class="navbar__logo">
           <img
             src="assets/images/logo.svg"
-            alt="Go to the homepage of Blogr"
+            alt="Blogr - Home"
             class="navbar__logo--img"
           />
         </a>
@@ -41,28 +36,46 @@
             <a href="#" class="navbar__links--link"
               >Product
               <span class="navbar__links--link__icon"
-                ><img
-                  src="assets/images/icon-arrow-light.svg"
-                  alt="expand dropdown list" /></span
+                ><img src="assets/images/icon-arrow-light.svg" alt="" /></span
             ></a>
+            <ul class="navbar__dropdown">
+              <li><a class="navbar__dropdown--link" href="#">Overview</a></li>
+              <li><a class="navbar__dropdown--link" href="#">Pricing</a></li>
+              <li>
+                <a class="navbar__dropdown--link" href="#">Marketplace</a>
+              </li>
+              <li>
+                <a class="navbar__dropdown--link" href="#">Features</a>
+              </li>
+              <li>
+                <a class="navbar__dropdown--link" href="#">Integrations</a>
+              </li>
+            </ul>
           </li>
           <li class="navbar__links--item">
             <a href="#" class="navbar__links--link"
               >Company
               <span class="navbar__links--link__icon"
-                ><img
-                  src="assets/images/icon-arrow-light.svg"
-                  alt="expand dropdown list" /></span
+                ><img src="assets/images/icon-arrow-light.svg" alt="" /></span
             ></a>
+            <ul class="navbar__dropdown">
+              <li><a class="navbar__dropdown--link" href="#">About</a></li>
+              <li><a class="navbar__dropdown--link" href="#">Team</a></li>
+              <li><a class="navbar__dropdown--link" href="#">Blog</a></li>
+              <li><a class="navbar__dropdown--link" href="#">Careers</a></li>
+            </ul>
           </li>
           <li class="navbar__links--item">
             <a href="#" class="navbar__links--link"
               >Connect
               <span class="navbar__links--link__icon"
-                ><img
-                  src="assets/images/icon-arrow-light.svg"
-                  alt="expand dropdown list" /></span
+                ><img src="assets/images/icon-arrow-light.svg" alt="" /></span
             ></a>
+            <ul class="navbar__dropdown">
+              <li><a class="navbar__dropdown--link" href="#">Contact</a></li>
+              <li><a class="navbar__dropdown--link" href="#">Newsletter</a></li>
+              <li><a class="navbar__dropdown--link" href="#">LinkedIn</a></li>
+            </ul>
           </li>
         </ul>
         <ul class="navbar__buttons">
@@ -75,7 +88,7 @@
               >Login</a
             >
           </li>
-          <li class="navbar__bLoginuttons--item">
+          <li class="navbar__buttons--item">
             <a
               href="#"
               aria-hidden="false"
@@ -86,7 +99,7 @@
           </li>
         </ul>
       </nav>
-      <section id="main" tabindex="-1" class="header__text-content">
+      <section id="main" class="header__text-content">
         <h1 class="header__text-content--heading">
           A modern publishing platform
         </h1>
@@ -236,49 +249,19 @@
               <h3 class="footer__linksWrapper--heading">Product</h3>
               <ul class="footer__links">
                 <li class="footer__links--item">
-                  <a
-                    href="#"
-                    aria-hidden="false"
-                    aria-label="Go to Overview"
-                    class="footer__links--link"
-                    >Overview</a
-                  >
+                  <a href="#" class="footer__links--link">Overview</a>
                 </li>
                 <li class="footer__links--item">
-                  <a
-                    href="#"
-                    aria-hidden="false"
-                    aria-label="Go to Pricing"
-                    class="footer__links--link"
-                    >Pricing</a
-                  >
+                  <a href="#" class="footer__links--link">Pricing</a>
                 </li>
                 <li class="footer__links--item">
-                  <a
-                    href="#"
-                    aria-hidden="false"
-                    aria-label="Go to Marketplace"
-                    class="footer__links--link"
-                    >Marketplace</a
-                  >
+                  <a href="#" class="footer__links--link">Marketplace</a>
                 </li>
                 <li class="footer__links--item">
-                  <a
-                    href="#"
-                    aria-hidden="false"
-                    aria-label="Go to Features"
-                    class="footer__links--link"
-                    >Features</a
-                  >
+                  <a href="#" class="footer__links--link">Features</a>
                 </li>
                 <li class="footer__links--item">
-                  <a
-                    href="#"
-                    aria-hidden="false"
-                    aria-label="Go to Integrations"
-                    class="footer__links--link"
-                    >Integrations</a
-                  >
+                  <a href="#" class="footer__links--link">Integrations</a>
                 </li>
               </ul>
             </div>
@@ -286,40 +269,16 @@
               <h3 class="footer__linksWrapper--heading">Company</h3>
               <ul class="footer__links">
                 <li class="footer__links--item">
-                  <a
-                    href="#"
-                    aria-hidden="false"
-                    aria-label="Go to About"
-                    class="footer__links--link"
-                    >About</a
-                  >
+                  <a href="#" class="footer__links--link">About</a>
                 </li>
                 <li class="footer__links--item">
-                  <a
-                    href="#"
-                    aria-hidden="false"
-                    aria-label="Go to Team"
-                    class="footer__links--link"
-                    >Team</a
-                  >
+                  <a href="#" class="footer__links--link">Team</a>
                 </li>
                 <li class="footer__links--item">
-                  <a
-                    href="#"
-                    aria-hidden="false"
-                    aria-label="Go to Blog"
-                    class="footer__links--link"
-                    >Blog</a
-                  >
+                  <a href="#" class="footer__links--link">Blog</a>
                 </li>
                 <li class="footer__links--item">
-                  <a
-                    href="#"
-                    aria-hidden="false"
-                    aria-label="Go to Careers"
-                    class="footer__links--link"
-                    >Careers</a
-                  >
+                  <a href="#" class="footer__links--link">Careers</a>
                 </li>
               </ul>
             </div>
@@ -327,31 +286,13 @@
               <h3 class="footer__linksWrapper--heading">Contact</h3>
               <ul class="footer__links">
                 <li class="footer__links--item">
-                  <a
-                    href="#"
-                    aria-hidden="false"
-                    aria-label="Go to Contact"
-                    class="footer__links--link"
-                    >Contact</a
-                  >
+                  <a href="#" class="footer__links--link">Contact</a>
                 </li>
                 <li class="footer__links--item">
-                  <a
-                    href="#"
-                    aria-hidden="false"
-                    aria-label="Go to Newsletter"
-                    class="footer__links--link"
-                    >Newsletter</a
-                  >
+                  <a href="#" class="footer__links--link">Newsletter</a>
                 </li>
                 <li class="footer__links--item">
-                  <a
-                    href="#"
-                    aria-hidden="false"
-                    aria-label="Go to LinkedIn"
-                    class="footer__links--link"
-                    >LinkedIn</a
-                  >
+                  <a href="#" class="footer__links--link">LinkedIn</a>
                 </li>
               </ul>
             </div>
